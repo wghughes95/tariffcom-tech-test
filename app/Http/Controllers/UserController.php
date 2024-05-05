@@ -128,7 +128,7 @@ class UserController extends Controller
 
             $file->storeAs('public/profile_images', $filename);
 
-            $user->photo = '/profile_images' . $filename;
+            $user->photo = 'profile_images/' . $filename;
             $user->save();
         }
 
